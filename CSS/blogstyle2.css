@@ -1,0 +1,239 @@
+/* Page background */
+body {
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: #0C121E; 
+    margin: 8px;
+}
+
+/* Post container */
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff0d;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header borders */
+.title-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF
+}
+
+/* Gradient title */
+.title-header h1 {
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 10px 0;
+    color: #FFFFFF;
+}
+
+/* Author name */
+.author-date {
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.content-wrapper {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.inline-img-container {
+    float: right;
+    width: 45%;
+    margin: 0px 0 15px 20px;
+    text-align: center;
+}
+
+/* Apply fullscreen to ANY image container with id when targeted */
+ .blog-container:target, .inline-img-container:target {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    float: none;
+    margin: 0;
+}
+
+.inline-img-container:target .blog-main-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #F9D423;
+}
+
+.close {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.blog-container:target .close, .inline-img-container:target .close {
+    display: block;
+}
+
+.inline-img-container:target .img-caption {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: block;
+}
+
+
+.blog-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.blog-main-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    border: 5px solid #F9D423;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-caption {
+    font-size: 0.85rem;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Section titles */
+h2 {
+    font-family: Georgia, serif;
+    color: #F9D423;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFFFFF;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+/* Main text */
+p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 2em; 
+    
+    padding: 15px 20px;
+    color: #eaeaea; 
+}
+
+h3 {
+  border-left: 5px solid #F9D423;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+
+/* Text emphasis */
+b, strong { color: #333; }
+i, em { color: #eaeaea; }
+em, i, strong, b { padding-right: 2px; }
+
+/* Small citations */
+sup {
+    color: #145485;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.button-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Back button */
+.btn-back, .btn-back-blog1, .btn-next{
+    background-color: #152238;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0;
+}
+
+.btn-next {
+    background-color: #152238;
+    color: #FFFFFF;
+}
+
+.btn-back:hover, .btn-back-blog1:hover .btn-next:hover {
+    background-color: #F9D423;
+    transform: translateX(-3px);
+    color:#000000;
+}
+
+.btn-next:hover {
+    background-color: #F9D423;
+    transform: translateX(-3px);
+    color:#000000;
+}
+
+.btn-link {
+    text-decoration: none;
+    outline: none;
+}
+
+/* Mobile view */
+@media (max-width: 900px) {
+    .content {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .title-header h1 {
+        font-size: 2.2rem;
+    }
+}
