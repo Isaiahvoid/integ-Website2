@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Place</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="site-container">
+        <header class="navbar">
+            <div class="logo">Dream<span> Place.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="biography.html">ABOUT ME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                    <li class="hamburger-li">
+                        <input type="checkbox" id="drawer-toggle">
+                        <label for="drawer-toggle" class="hamburger-icon">
+                            <i class="fa fa-bars"></i>
+                        </label>
+
+                        <div class="side-drawer">
+                            <label for="drawer-toggle" class="drawer-close">&times;</label>
+
+                            <div class="drawer-content">
+                                <h2 class="drawer-log">MENU</h2> <hr class="drawer-divider">
+                                
+                                <div class="drawer-links-main">
+                                    <a href="../index.html">Home</a>
+                                    <a href="biography.html">About Me</a>
+                                    <a href="photo.html">Gallery</a>
+                                    <a href="media.html" >🎧 MY BEATS</a>
+                                    <a href="movie.html">🎬 MOVIES</a>
+                                    <a href="tvshows.html">📺 TV SHOWS</a>
+                                    <a style="color: #F9D423;">🌏 DREAM PLACES</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="drawer-overlay"></div>
+                    </li>   
+                </ul>
+            </nav>
+        </header>
+
+        <div class="gallery-main">
+         <h1 class="gallery-title">Dream <span class="highlight">Places</span> I want to <span class="highlight">Visit🗺️</span></h1>
+         <p class="description" style="text-align: center;
+         margin-top:-20px;">Click the areas in the collage to explore each
+         places I want to visit someday.</p>
+        </div>
+
+        <div class="map-container">
+            
+            <!-- Main collage images -->
+            <img src="../Places/dreamplaces.png" alt="Five Places I want to visit Someday" usemap="#dreammap" class="dream-collage">
+            <map name="dreammap">
+                <area shape="rect" coords="260,35,572,540" href="uae.html" alt="dubai" target="_self"/>
+                <area shape="circle" coords="160,700,70" href="singapore.html" alt="merlion" target="_self"/>
+                <area shape="poly" coords="135,380, 230,470, 190,580, 80,580, 40,470" href="switzerland.html" alt="switzerland" target="_self"/>
+                <area shape="poly" coords="415,595, 515,650, 515,750, 415,785, 315,750, 315,650" href="southkorea.html" alt="south Korea" target="_self"/>
+                <area shape="rect" coords="40,100, 220,260" href="usa.html" alt="golden gate" target="_self"/>
+            </map>
+        </div>
+    </div>
+</body>
+</html>

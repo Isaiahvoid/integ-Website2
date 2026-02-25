@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv Shows</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="site-container">
+        <header class="navbar">
+            <div class="logo">My<span>TV Shows.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="biography.html">ABOUT ME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                    <li class="hamburger-li">
+                        <input type="checkbox" id="drawer-toggle">
+                        <label for="drawer-toggle" class="hamburger-icon"><i class="fa fa-bars"></i></label>
+
+                        <div class="side-drawer">
+                            <label for="drawer-toggle" class="drawer-close">&times;</label>
+                            <div class="drawer-content">
+                                <h2 class="drawer-log">MENU</h2>
+                                <hr class="drawer-divider">
+                                <div class="drawer-links-main">
+                                    <a href="../index.html">HOME</a>
+                                    <a href="biography.html">ABOUT ME</a>
+                                    <a href="photo.html">GALLERY</a>
+                                    <a href="media.html" >🎧 MY BEATS</a>
+                                    <a href="movie.html">🎬 MOVIES</a>
+                                    <a style="color: #F9D423;">📺 TV SHOWS</a>
+                                    <a href="dreamplace.html">🌏 DREAM PLACES</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawer-overlay"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="gallery-main">
+            <section id="tvshows">
+                <h1 class="gallery-title">MY <span class="highlight">TV SHOWS</span>📺</h1>
+                <p class="description" style="text-align: center; margin-top: -20px;">TV Shows that I will always remember to watch.</p>
+
+                <input type="radio" name="shows-filter" id="all" checked hidden>
+                <input type="radio" name="shows-filter" id="horror" hidden>
+                <input type="radio" name="shows-filter" id="supernatural" hidden>
+                <input type="radio" name="shows-filter" id="cartoon" hidden>
+                <input type="radio" name="shows-filter" id="anime" hidden>
+
+                <div class="filter-navbar">
+                    <label for="all">All</label>
+                    <label for="horror">Horror</label>
+                    <label for="supernatural">Supernatural</label>
+                    <label for="cartoon">Cartoon</label>
+                    <label for="anime">Anime</label>
+                </div>
+
+                <div class="tv-grid">
+                    <div class="tv-card item-horror">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/walking.jpg" alt="Walking poster">
+                            <div class="genre-tag">Horror</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Walking Dead</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Netflix / AMC</p>
+                                <p><strong>Starring:</strong> Charlie Cox, Vincent D'Onofrio</p>
+                                <p><strong>2010 ‧ Horror ‧ 11 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">A group of survivors led by a former sheriff struggles to stay alive in a world overrun by zombies while facing dangerous human threats and moral dilemmas.</p>
+                            <div class="play-area">
+                                <a href="#video-walking" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-supernatural item-horror">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/stranger.jpg" alt="Stranger Things poster">
+                            <div class="genre-tag">Supernatural / Horror</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Stranger Things</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Netflix</p>
+                                <p><strong>Starring:</strong> Millie Bobby Brown, Finn Wolfhard</p>
+                                <p><strong>2016 ‧ 5 season</strong></p>  
+                            </div>
+                            <p class="movie-synopsis">When a young boy vanishes, a small town uncovers a mystery involving secret experiments.</p>
+                            <div class="play-area">
+                                <a href="#video-stranger" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-supernatural">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/vampire.jpg" alt="Vampire diaries poster">
+                            <div class="genre-tag">Supernatural</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>The Vampire Diaries</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Netflix</p>
+                                <p><strong>Starring:</strong> Nina Dobrev, Paul WesleyIan Somerhalder, Steven R. McQueen, Kat Graham,
+                                    Candice King,
+                                    Zach Roerig</p>
+                                <p><strong>2009 ‧ 8 seasons</strong></p>
+
+                            </div>
+                            <p class="movie-synopsis">Teen Elena Gilbert navigates love, friendship, and danger in Mystic Falls, where vampires, witches, and supernatural forces threaten her world.</p>
+                            <div class="play-area">
+                                <a href="#video-vampire" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-supernatural">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/originals.jpg" alt="Vampire diaries poster">
+                            <div class="genre-tag">Supernatural</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>The Originals</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Netflix</p>
+                                <p><strong>Starring:</strong>Joseph Morgan,
+                                    Daniel Gillies,
+                                    Phoebe Tonkin,
+                                    Charles Michael Davis,
+                                    Danielle Campbell,
+                                    Leah Pipes,
+                                    Claire Holt </p>
+                                <p><strong>2013 ‧ 5 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">The Mikaelson family, the original vampires, return to New Orleans to reclaim power, protect their own, and confront rival supernatural factions.</p>
+                            <div class="play-area">
+                                <a href="#video-vampire" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-cartoon">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/adventure.jpg" alt="Adventure Time poster">
+                            <div class="genre-tag">Cartoon</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Adventure Time</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Cartoon Network</p>
+                                <p><strong>Starring:</strong> Jeremy Shada, John DiMaggio</p>
+                                <p><strong>2010 ‧ 10 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">A boy named Finn and his best friend Jake, a dog with magical powers, go on adventures.</p>
+                            <div class="play-area">
+                                <a href="#video-adventure" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-cartoon">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/regular.jpg" alt="Regular show poster">
+                            <div class="genre-tag">Cartoon</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Regular Show</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Cartoon Network</p>
+                                <p><strong>Starring:</strong> J.G. Quintel — Mordecai,
+                                William Salyers — Rigby,
+                                Sam Marin — Pops / Benson / Muscle Man,
+                                Mark Hamill — Skips, Rodger Bumpass — High Five Ghost</p>
+                                <p><strong>2010 8 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">Two slackers, Mordecai and Rigby, work at a park and get into surreal, often chaotic adventures that spiral out of control.</p>
+                            <div class="play-area">
+                                <a href="#video-regular" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-cartoon">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/amazing.png" alt="Regular show poster">
+                            <div class="genre-tag">Cartoon</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>The Amazing World of Gumball</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Cartoon Network</p>
+                                <p><strong>Starring:</strong>Logan Grove, Nicolas Cantu,Tara Strong,Dan Russell,Teresa Gallagher,
+                                    Kwesi Boakye, Donielle T. Hansley Jr.</p>
+                                    <p><strong>2011 ‧ 6 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">Gumball Watterson, a blue cat, and his family navigate hilarious and chaotic adventures in the town of Elmore, mixing everyday life with absurd and surreal situations.</p>
+                            <div class="play-area">
+                                <a href="#video-amazing" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-card item-cartoon">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/gravity.jpg" alt="Regular show poster">
+                            <div class="genre-tag">Cartoon</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Gravity Falls</h3>
+                            <div class="movie-meta">
+                                <p><strong>Network:</strong> Disney Channel / Disney XD </p>
+                                <p><strong>Starring:</strong>Jason Ritter, Kristen Schaal, Alex Hirsch, Linda Cardellini, Niki Yang, Jackie Buscarino, Keith Ferguson.</p>
+                                    <p><strong>2012  ‧ 2 seasons</strong></p>
+                            </div>
+                            <p class="movie-synopsis">Twins Dipper and Mabel Pines spend the summer with their great-uncle in the mysterious town of Gravity Falls, uncovering supernatural secrets and strange creatures.</p>
+                            <div class="play-area">
+                                <a href="#video-gravity" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tv-card item-anime">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/attack.jpg" alt="attack on titan poster">
+                            <div class="genre-tag">Anime</div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Attack on Titan</h3>
+                            <div class="movie-meta">
+                                <p><strong>Studio:</strong> Wit Studio / MAPPA</p>
+                                <p><strong>Starring:</strong> Yuki Kaji — Eren Yeager,
+                                    Marina Inoue — Armin Arlert,
+                                    Yui Ishikawa — Mikasa Ackerman,
+                                    Daisuke Ono — Erwin Smith,
+                                    Hiroshi Kamiya — Levi Ackerman</p>
+                                <p><strong>2013 ‧ 4 seasons</strong></p>    
+                            </div>
+                            <p class="movie-synopsis">Humanity fights for survival against giant humanoid Titans that devour people, as Eren Yeager and his friends join the military to uncover the truth behind the monsters and their walled world.</p>
+                            <div class="play-area">
+                                <a href="#video-attack" class="hero-btn"><i class="fa fa-play"></i> Play clip</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <a href="#" class="go-top-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <div id="video-walking" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kBxb-EOLj0Y?si=4qMnBDIlGlexLXPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-stranger" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xh3zD5CB_-Q?si=VgLbAjJSv-wT9alP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-adventure" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UPsdJDfeomc?si=1GdBwJqIpsKu9qBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-regular" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/EZXnss-ptyg?si=pO4bRXYC1e0Rt71X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-amazing" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/cXn2ojjyYDQ?si=EDoqTyCOi1p4B2EG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-gravity" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/0m8Fk-EdlPo?si=4iyOEPNwIRH9XGi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-attack" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/if15SYD1Gv4?si=LpM1Rden5i7pCOZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-vampire" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OBoOjZT3T-E?si=JKntCjNkTsQZiKJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

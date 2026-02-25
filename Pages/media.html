@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="site-container">
+        <header class="navbar">
+            <div class="logo">My<span>Media.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="biography.html">ABOUT ME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+
+                    <li class="hamburger-li">
+                        <input type="checkbox" id="drawer-toggle">
+                        <label for="drawer-toggle" class="hamburger-icon"><i class="fa fa-bars"></i></label>
+
+                        <div class="side-drawer">
+                            <label for="drawer-toggle" class="drawer-close">&times;</label>
+                            <div class="drawer-content">
+                                <h2 class="drawer-log">MENU</h2>
+                                <hr class="drawer-divider">
+                                <div class="drawer-links-main">
+                                    <a href="../index.html">HOME</a>
+                                    <a href="biography.html">ABOUT ME</a>
+                                    <a href="photo.html">GALLERY</a>
+                                    <a style="color: #F9D423;">🎧 MY BEATS</a>
+                                    <a href="movie.html">🎬 MOVIES</a>
+                                    <a href="tvshows.html">📺 TV SHOWS</a>
+                                    <a href="dreamplace.html">🌏 DREAM PLACES</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawer-overlay"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="gallery-main">
+            <section id="beats">
+                <h1 class="gallery-title">MY <span class="highlight">BEATS</span>🎧</h1>
+                <p class="description" style="text-align: center; margin-top: -20px;">Song's that define my vibe</p>
+
+                <input type="radio" name="beat-filter" id="all" checked hidden>
+                <input type="radio" name="beat-filter" id="pop" hidden>
+                <input type="radio" name="beat-filter" id="opm" hidden>
+                <input type="radio" name="beat-filter" id="phonk" hidden>
+                <input type="radio" name="beat-filter" id="rock" hidden>
+
+                <div class="filter-navbar">
+                    <label for="all">ALl</label>
+                    <label for="pop">Pop</label>
+                    <label for="opm">Opm</label>
+                    <label for="phonk">Phonk</label>
+                    <label for="rock">Rock</label>
+                </div>
+
+
+                <div class="media-card">  
+                    
+                    <div class="media-horizontal-card item-pop">
+                        <div class="media-cover">
+                            <img src="../IMAGES/backburner.jpg" alt="Album Cover">
+                        </div>      
+                        <div class="media-info">
+                            <h3>Backburner</h3>
+                            <p class="artist-name">Nikki</p>
+                            <p class="genre-label">Genre: pop/r&b</p>
+                            <p class="short-desc">This song it feels like I’m only remembered when it’s convenient — like a backup plan on standby, valued only when needed.</p>
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7gqdZpe7MlTLA59viClLoY?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-pop">
+                        <div class="media-cover">
+                            <img src="../IMAGES/break.jpg" alt="Album Cover">
+                        </div>      
+                        <div class="media-info">
+                            <h3>Give Your Heart a Break</h3>
+                            <p class="artist-name">audiogroove</p>
+                            <p class="genre-label">Genre: pop/r&b</p>
+                            <p class="short-desc">Smooth, confident, and chill — this song makes me feel cool and untouchable.</p>
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7vUoDKzhSiczwv0hHlRi4o?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-opm">
+                        <div class="media-cover">
+                            <img src="../IMAGES/Multo.png" alt="Album Cover"></div>
+                        <div class="media-info">
+                            <h3>Multo</h3>
+                            <p class="artist-name">Cup of Joe</p>
+                            <p class="genre-label">Genre: OPM</p>
+                            <p class="short-desc">This song is like A gentle
+                            ghost of the past, dreamy and bittersweet, reminding
+                            me of what I’ve lost.</p>
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4cBm8rv2B5BJWU2pDaHVbF?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-horizontal-card item-opm">
+                        <div class="media-cover">
+                            <img src="../IMAGES/kalapastangan.jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>Kalapastangan</h3>
+                            <p class="artist-name">Cup of Joe</p>
+                            <p class="genre-label">Genre: OPM</p>
+                            <p class="short-desc">Playing this feels like letting out everything I’ve been holding in — raw, emotional, and unfiltered.</p>
+                            
+                            <div class="play-area">
+                               <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1udOOSbJnytCdgvbgYOF5s?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-horizontal-card item-phonk">
+                        <div class="media-cover">
+                            <img src="../IMAGES/passo bem.jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>Passo bem Solto(slowed)</h3>
+                            <p class="artist-name">ATLXS</p>
+                            <p class="genre-label">Genre: PHONK</p>
+                            <p class="short-desc">This song hits like pure adrenaline — riding my motorcycle, I feel unstoppable and totally alive! </p>
+
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe"
+                                style="border-radius:12px"
+                                src="https://open.spotify.com/embed/track/4sTlQPMyoFMPdhAJvErBN3?utm_source=generator"
+                                width="100%" height="120" frameBorder="0"
+                                allowfullscreen="" allow="autoplay;
+                                clipboard-write; encrypted-media; fullscreen;
+                                picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-phonk">
+                        <div class="media-cover">
+                            <img src="../IMAGES/NO BATIDÃO.jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>NO BATIDÃO (Slowed)</h3>
+                            <p class="artist-name">Teddy Abel </p>
+                            <p class="genre-label">Genre: PHONK</p>
+                            <p class="short-desc">Playing this feels like letting out everything I’ve been holding in — raw, emotional, and unfiltered.</p>
+
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe"
+                                style="border-radius:12px"
+                                src="https://open.spotify.com/embed/track/72YttnPRxyHe8zCG50jYhj?utm_source=generator"
+                                width="100%" height="120" frameBorder="0"
+                                allowfullscreen="" allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-phonk">
+                        <div class="media-cover">
+                            <img src="../IMAGES/2 Phut Hon Funk (Slowed).jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>2 Phut Hon Funk (Slowed)</h3>
+                            <p class="artist-name">KhangMxne and MGD </p>
+                            <p class="genre-label">Genre: PHONK</p>
+                            <p class="short-desc">Playing this feels like letting out everything I’ve been holding in — raw, emotional, and unfiltered.</p>
+
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7lXLBOKNQsS6uyL7DCrc6d?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-rock">
+                        <div class="media-cover">
+                            <img src="../IMAGES/monster.jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>Monster</h3>
+                            <p class="artist-name">Skillet</p>
+                            <p class="genre-label">Genre: Rock</p>
+                            <p class="short-desc">Every beat hits like a surge of power — blasting this on my ride makes me feel fierce, unstoppable, and ready to take on anything!</p>
+
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2UREu1Y8CO4jXkbvqAtP7g?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-horizontal-card item-rock">
+                        <div class="media-cover">
+                            <img src="../gIMAGES/hero.jpg" alt="Album Cover">
+                        </div>
+                        <div class="media-info">
+                            <h3>Hero</h3>
+                            <p class="artist-name">Skillet</p>
+                            <p class="genre-label">Genre: Rock</p>
+                            <p class="short-desc">This song makes me feel like I can take on the world. Every chorus hits hard and pumps me full of energy.</p>
+
+                            <div class="play-area">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4CbKVDZkYKdv69I4bCaKUq?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <a href="#" class="go-top-btn"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+</body>
+</html>

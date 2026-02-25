@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collections | Photo Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body id="top">
+    <div class="site-container">
+        
+        <header class="navbar">
+            <div class="logo">Photo<span> Gallery </span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="biography.html">ABOUT ME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="hamburger-li">
+                        <input type="checkbox" id="drawer-toggle">
+                        <label for="drawer-toggle" class="hamburger-icon"><i class="fa fa-bars"></i></label>
+                        <div class="side-drawer">
+                            <label for="drawer-toggle" class="drawer-close">&times;</label>
+                            <div class="drawer-content">
+                                <h2 class="drawer-log">MENU</h2>
+                                <hr class="drawer-divider">
+                                <div class="drawer-links-main">
+                                    <a href="../index.html">Home</a>
+                                    <a href="biography.html">About Me</a>
+                                    <a style="color: #F9D423;">Gallery</a>
+                                    <a href="media.html" >🎧 MY BEATS</a>
+                                    <a href="movie.html">🎬 MOVIES</a>
+                                    <a href="tvshows.html">📺 TV SHOWS</a>
+                                    <a href="dreamplace.html">🌏 DREAM PLACES</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawer-overlay"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="gallery-main">
+            <h1 class="gallery-title">MY <span class="highlight">COLLECTIONS</span></h1>
+
+            <div class="filter-container">
+                <input type="radio" name="gallery-filter" id="all" checked hidden>
+                <input type="radio" name="gallery-filter" id="filter-me" hidden>
+                <input type="radio" name="gallery-filter" id="filter-family" hidden>
+                <input type="radio" name="gallery-filter" id="filter-school" hidden>
+                <input type="radio" name="gallery-filter" id="filter-gf" hidden>
+
+                <div class="filter-navbar">
+                    <label for="all">All</label>
+                    <label for="filter-me">Me</label>
+                    <label for="filter-family">Family</label>
+                    <label for="filter-school">Friends</label>
+                    <label for="filter-gf">GF</label>
+                </div>
+
+                <div class="grid-container">
+                    <div class="photo-card item-me" id="self-view">
+                        <a href="#self-view">
+                            <img src="../IMAGES/selfie1.jpg" alt="Mirror shot" class="blog-main-img"></a>
+                        <a href="#self-close" class="close">✕</a>
+                        <div class="card-text"><p>Pogi moments</p></div>
+                    </div>
+                    <div class="photo-card item-me" id="child-view">
+                        <a href="#child-view"><img src="../IMAGES/childhood2.jpg" alt="Childhood" class="blog-main-img"></a>
+                        <a href="#child-close" class="close">✕</a>
+                        <div class="card-text"><p>Glimpse of the younger years.</p></div>
+                    </div>
+                    <div class="photo-card item-me" id="Child-view2">
+                        <a href="#Child-view2"><img src="../IMAGES/childhood.jpg" alt="Me" class="blog-main-img"></a>
+                        <a href="#Child-close" class="close">✕</a>
+                        <div class="card-text"><p>Young self w/ cousins.</p></div>
+                    </div>
+                    <div class="photo-card  item-me" id="Me-view">
+                        <a href="#Me-view"><img src="../IMAGES/IMG1.jpg" alt="Me" class="blog-main-img"></a>
+                        <a href="#Me-close" class="close">✕</a>
+                        <div class="card-text"><p>Pogi moments</p></div>
+                    </div>
+                    <div class="photo-card item-me" id="throttle-view">
+                        <a href="#throttle-view"><img src="../IMAGES/theraphy.jpg" alt="Throttle theraphy" class="blog-main-img"></a>
+                        <a href="#throttle-close" class="close">✕</a>
+                        <div class="card-text"><p>Throttle theraphy.</p></div>
+                    </div>
+
+                    <div class="photo-card item-family" id="fam-view">
+                        <a href="#fam-view"><img src="../IMAGES/family1.jpg" alt="Family" class="blog-main-img"></a>
+                        <a href="#fam-close" class="close">✕</a>
+                        <div class="card-text"><p>Sunday lunch with the whole group.</p></div>
+                    </div>
+                    <div class="photo-card item-family" id="Mem-view">
+                        <a href="#Mem-view"><img src="../IMAGES/family2.jpg" alt="Family" class="blog-main-img"></a>
+                        <a href="#Mem-close" class="close">✕</a>
+                        <div class="card-text"><p>Memories from the last holiday.</p></div>
+                    </div>
+                    <div class="photo-card item-family" id="Gather-view">
+                        <a href="#Gather-view"><img src="../IMAGES/family3.jpg" alt="Fam 3" class="blog-main-img"></a>
+                        <a href="#Gather-close" class="close">✕</a>
+                        <div class="card-text"><p>Family Gathering at the house.</p></div>
+                    </div>
+                    <div class="photo-card item-family" id="celeb-view">
+                        <a href="#celeb-view"><img src="../IMAGES/family4.jpg" alt="Family" class="blog-main-img"></a>
+                        <a href="#celeb-close" class="close">✕</a>
+                        <div class="card-text"><p>Celebrations and milestones.</p></div>
+                    </div>
+                    <div class="photo-card item-family" id="support-view">
+                        <a href="#support-view"><img src="../IMAGES/family5.jpg" alt="Family" class="blog-main-img"></a>
+                        <a href="#support-close" class="close">✕</a>
+                        <div class="card-text"><p>Supporting each other always.</p></div>
+                    </div>
+
+                    <div class="photo-card item-school" id="mid-view">
+                        <a href="#mid-view"><img src="../IMAGES/friend1.jpg" alt="School" class="blog-main-img"></a>
+                        <a href="#mid-close" class="close">✕</a>
+                        <div class="card-text"><p>After midterms hangout.</p></div>
+                    </div>
+                    <div class="photo-card item-school" id="gala-view">
+                        <a href="#gala-view"><img src="../IMAGES/friend2.jpg" alt="Gala" class="blog-main-img"></a>
+                        <a href="#gala-close" class="close">✕</a>
+                        <div class="card-text"><p>Gala with them</p></div>
+                    </div>
+                    <div class="photo-card item-school" id="new-view">
+                        <a href="#new-view"><img src="../IMAGES/friend3.jpg" alt="Memories" class="blog-main-img"></a>
+                        <a href="#new-close" class="close">✕</a>
+                        <div class="card-text"><p>New Memories.</p></div>
+                    </div>
+                    <div class="photo-card item-school" id="tambay-view">
+                        <a href="#tambay-view"><img src="../IMAGES/friend4.jpg" alt="tambay" class="blog-main-img"></a>
+                        <a href="#tambay-close" class="close">✕</a>
+                        <div class="card-text"><p>Tambay talks.</p></div>
+                    </div>
+                    <div class="photo-card item-school" id="pic-view">
+                        <a href="#pic-view"><img src="../IMAGES/friend5.jpg" alt="Last pic" class="blog-main-img"></a>
+                        <a href="#pic-close" class="close">✕</a>
+                        <div class="card-text"><p>Last pic with them.</p></div>
+                    </div>
+
+                    <div class="photo-card item-gf" id="special-view">
+                        <a href="#special-view"><img src="../IMAGES/gf1.jpg" alt="special moments" class="blog-main-img"></a>
+                        <a href="#special-close" class="close">✕</a>
+                        <div class="card-text"><p>Special moments together.</p></div>
+                    </div>
+                    <div class="photo-card item-gf" id="admire-view">
+                        <a href="#admire-view"><img src="../IMAGES/gf2.jpg" alt="admiring" class="blog-main-img"></a>
+                        <a href="#admire-close" class="close">✕</a>
+                        <div class="card-text"><p>Admiring her beauty.</p></div>
+                    </div>
+                    <div class="photo-card item-gf" id="moment-view">
+                        <a href="#moment-view"><img src="../IMAGES/gf3.jpg" alt="Moments" class="blog-main-img"></a>
+                        <a href="#moment-close" class="close">✕</a>
+                        <div class="card-text"><p>Special moments together.</p></div>
+                    </div>
+                    <div class="photo-card item-gf" id="fav-view">
+                        <a href="#fav-view"><img src="../IMAGES/gf4.jpg" alt="Favorite cafe" class="blog-main-img"></a>
+                        <a href="#fav-close" class="close">✕</a>
+                        <div class="card-text"><p>Our favorite cafe spot.</p></div>
+                    </div>
+                    <div class="photo-card item-gf" id="more-view">
+                        <a href="#more-view"><img src="../IMAGES/gf5.jpg" alt="Memories together" class="blog-main-img"></a>
+                        <a href="#more-close" class="close">✕</a>
+                        <div class="card-text"><p>Creating a more memories together.</p></div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <a href="#top" class="go-top-btn"><i class="fa fa-arrow-up"></i></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="site-container">
+        <header class="navbar">
+            <div class="logo">My<span>Movie.</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="biography.html">ABOUT ME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                    <li class="hamburger-li">
+                        <input type="checkbox" id="drawer-toggle">
+                        <label for="drawer-toggle" class="hamburger-icon"><i class="fa fa-bars"></i></label>
+
+                        <div class="side-drawer">
+                            <label for="drawer-toggle" class="drawer-close">&times;</label>
+                            <div class="drawer-content">
+                                <h2 class="drawer-log">MENU</h2>
+                                <hr class="drawer-divider">
+                                <div class="drawer-links-main">
+                                    <a href="../index.html">HOME</a>
+                                    <a href="biography.html">ABOUT ME</a>
+                                    <a href="photo.html">GALLERY</a>
+                                    <a href="media.html" >🎧 MY BEATS</a>
+                                    <a style="color: #F9D423;">🎬 MOVIES</a>
+                                    <a href="tvshows.html">📺 TV SHOWS</a>
+                                    <a href="dreamplace.html">🌏 DREAM PLACES</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawer-overlay"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="gallery-main">
+            <section id="movies">
+                <h1 class="gallery-title">MY <span class="highlight">MOVIES</span>🎬</h1>
+                <p class="description" style="text-align: center; margin-top: -20px;">Movies that I like to Watch.</p>
+
+                <input type="radio" name="movie-filter" id="all" checked hidden>
+                <input type="radio" name="movie-filter" id="action" hidden>
+                <input type="radio" name="movie-filter" id="comedy" hidden>
+                <input type="radio" name="movie-filter" id="horror" hidden>
+                <input type="radio" name="movie-filter" id="animation" hidden>
+
+                <div class="filter-navbar">
+                    <label for="all">All</label>
+                    <label for="action">Action</label>
+                    <label for="comedy">Comedy</label>
+                    <label for="horror">Horror</label>
+                    <label for="animation">Animation</label>
+                </div>
+
+                <div class="movie-grid">
+                    
+                    <div class="movie-card item-action">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/carribean.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Action</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Pirates of the Caribbean</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> Gore Verbinski</p>
+                                <p><strong>Starring:</strong> Johnny Depp, Orlando Bloom</p>
+                            </div>
+                            <p class="movie-synopsis">Captain Jack Sparrow teams up with Will Turner to rescue Elizabeth Swann.</p>
+                            <div class="play-area">
+                                <a href="#video-pirates" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-action">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/jurassic.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Action</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Jurassic Park</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> Steven Spielberg</p>
+                                <p><strong>Starring:</strong> Sam Neill, Laura Dern</p>
+                            </div>
+                            <p class="movie-synopsis">Scientists visit an island theme park with cloned dinosaurs.</p>
+                            <div class="play-area">
+                                <a href="#video-jurassic" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-comedy">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/rush hour.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Comedy</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Rush Hour</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> Brett Ratner</p>
+                                <p><strong>Starring:</strong> Jackie Chan, Chris Tucker</p>
+                            </div>
+                            <p class="movie-synopsis">Detective Inspector Lee teams up with LAPD officer James Carter.</p>
+                            <div class="play-area">
+                                <a href="#video-rushhour" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-comedy">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/doubt.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Comedy</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Mrs. Doubtfire</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> Chris Columbus</p>
+                                <p><strong>Starring:</strong> Robin Williams, Sally Field</p>
+                            </div>
+                            <p class="movie-synopsis">A divorced father disguises himself as a female housekeeper.</p>
+                            <div class="play-area">
+                                <a href="#video-doubtfire" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-horror">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/conjuring.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Horror</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>The Conjuring</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> James Wan</p>
+                                <p><strong>Starring:</strong> Vera Farmiga, Patrick Wilson</p>
+                            </div>
+                            <p class="movie-synopsis">Investigators help a family terrorized by a dark spirit.</p>
+                            <div class="play-area">
+                                <a href="#video-conjuring" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-horror">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/insidious.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Horror</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Insidious</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> James Wan</p>
+                                <p><strong>Starring:</strong> Rose Byrne, Patrick Wilson</p>
+                            </div>
+                            <p class="movie-synopsis">A young boy falls into a mysterious supernatural coma.</p>
+                            <div class="play-area">
+                                <a href="#video-insidious" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-animation">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/panda.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Animation</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Kung Fu Panda</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> John Stevenson</p>
+                                <p><strong>Starring:</strong> Jack Black, Angelina Jolie</p>
+                            </div>
+                            <p class="movie-synopsis">Po, a clumsy panda, is chosen as the Dragon Warrior.</p>
+                            <div class="play-area">
+                                <a href="#video-panda" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card item-animation">
+                        <div class="movie-poster">
+                            <img src="../IMAGES/cars.jpg" alt="Movie poster">
+                            <div class="movie-overlay"><p class="genre-tag">Animation</p></div>
+                        </div>
+                        <div class="movie-details">
+                            <h3>Cars</h3>
+                            <div class="movie-meta">
+                                <p><strong>Director:</strong> John Lasseter</p>
+                                <p><strong>Starring:</strong> Owen Wilson, Paul Newman</p>
+                            </div>
+                            <p class="movie-synopsis">Lightning McQueen gets stranded in the small town of Radiator Springs.</p>
+                            <div class="play-area">
+                                <a href="#video-cars" class="hero-btn"><i class="fa fa-play"></i> Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> </section>
+        </main>
+        <a href="#" class="go-top-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <div id="video-pirates" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/-9HT0l9HV4c" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-jurassic" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/_jKEqDKpJLw" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-rushhour" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/JMiFsFQcFLE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-doubtfire" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/3euGQ7-brs4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-conjuring" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/k10ETZ41q5o" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-insidious" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/zuZnRUcoWos" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-panda" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/NRc-ze7Wrxw" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="video-cars" class="video-overlay">
+            <div class="video-content">
+                <a href="#video-close" class="close-btn">&times; Close</a>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/pQly7_Cj34U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div> </body>
+</html>
